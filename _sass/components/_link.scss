@@ -1,0 +1,46 @@
+/*
+* link.scss
+*/
+
+a { 
+    // outline: none;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a:link, a:visited, a:focus { 
+    color: #000000;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav.link-preview a {
+    display: block;
+    text-align: center;
+    font-size: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+} 
+
+nav a {
+    // text-align: center;
+    // outline: none;
+    // width: 15.5%;
+    margin-right: 5.5%;
+    line-height: 1;
+} 
+
+nav a:focus, nav a:hover, nav a:active{
+    color: #676767;
+}
+
+nav li:last-child a {
+    margin-right: 0;
+}

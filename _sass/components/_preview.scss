@@ -1,0 +1,88 @@
+/*
+* components/_preview.scss
+*/
+
+[class*="preview"] {
+
+}
+
+.link-preview {
+    margin: auto;
+}
+
+.preview-card {
+    height: 100px;
+    max-height: 100%;
+}
+
+.preview-card > h1 {
+    font-size: 32px;
+    text-align: center;
+}
+
+.preview-card > p {
+    padding-left: 6%;
+    text-align: left;
+}
+
+.preview-image-card {
+    height: 500px;
+    max-height: 100%;
+}
+
+.image-post-cover-preview {
+    text-align: center;
+
+    width: 650px;
+    max-width: 100%;
+    height: 366px;
+    max-height: 100%;
+    aspect-ratio: 16/9;
+
+    padding-left: 5%; // :\
+}
+
+// ???
+.preview-image-card > h1 {
+    font-size: 32px;
+    text-align: center;
+}
+
+.preview-image-card > nav p {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.preview-image-card > p {
+    padding-left: 6%;
+    text-align: left;
+}
+
+@media (min-width: 320px) and (max-width: 750px){
+
+    .image-post-cover-preview {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        max-height: 100%;
+    } 
+
+    nav.link-preview a {
+        font-size: calc(28px + 6 * ((100vw - 320px) / 680));
+    } 
+
+    .preview-card > p {
+        margin-top: -5%;
+        margin-left: -2.5%;
+    }
+
+    .image-post-cover-preview {
+        margin-top: -5%;
+        margin-left: -3%;
+    }
+
+    .preview-image-card > p {
+        margin-top: -0.025%;
+        margin-left: -2.5%;
+    }
+}

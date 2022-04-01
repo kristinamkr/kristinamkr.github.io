@@ -1,0 +1,37 @@
+<!-- default.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- load stylesheet for css -->
+    <link rel="stylesheet" type="text/css" href="/assets/styles/main.css">
+    <!-- tab title -->
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/mushroom_tiny.ico">
+
+    <script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"kristinamkr",utcoffset:"-8"}))};sessionStorage.setItem("_swa","1");</script>
+</head>
+<body>
+    <div class="header"> <!-- my custom header class -->
+        <p><div id="site-header"><a href="/">mkrtchyan.xyz</a></div></p>
+        <nav>
+        <ul class="nav-links" id="links-header">
+            <li><a href="/about" {% if page.title=="about" %}class="active-page"{% endif %}>about</a></li>
+            <li><a href="/archive" {% if page.title=="archive" %}class="active-page"{% endif %}>archive</a></li>
+            <li><a href="https://github.com/kristinamkr"><img src="/assets/images/github_120px.png" class="image-icon"></a></li>
+            <li><a href="https://www.linkedin.com/in/kristina-mkrtchyan-867ba9235/"><img src="/assets/images/linkedin.png" class="image-icon"></a></li>
+        </ul>
+        </nav>
+        <!-- HERE --> 
+        <hr class="hr1">
+    </div>
+    <main class="page-content">
+        {{ content }}
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

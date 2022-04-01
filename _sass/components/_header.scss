@@ -1,0 +1,55 @@
+/*
+* header.scss
+*/
+
+.header {
+    // padding: 3% 10% 10% 10%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+#site-header {
+    font-family: Futura Heavy;
+    font-size: 72px;
+    letter-spacing: 5px;
+}
+
+#links-header {
+    font-family: Akzidenz Grotesk Bold, Helvetica;
+    font-size: 32px;
+    margin-top: -0.5%;
+}
+
+// why...
+.hr1 {
+    padding: unset;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+
+    // height: 20px;
+    // max-height: 100%;
+    margin: auto;
+
+    // border: none;
+    // background: url(/assets/images/vine_line3.png);
+    // background-repeat: repeat-x;
+}
+
+@media (min-width: 320px) and (max-width: 750px){
+    #site-header {
+        font-size: calc(42px + 6 * ((100vw - 550px) / 680));
+        letter-spacing: 1px;
+    }
+
+    #links-header {
+        font-family: Akzidenz Grotesk Bold, Helvetica;
+        font-size: calc(22px + 6 * ((100vw - 320px) / 680));
+    }
+
+    .hr1 {
+        width: 90%;
+        max-width: 100%;
+        margin: auto;
+     }
+}

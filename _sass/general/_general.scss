@@ -1,0 +1,72 @@
+/*
+* general.css
+*/
+
+/*
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
+*/
+
+// importing fonts...
+@font-face {
+    font-family: Akzidenz Grotesk Bold;
+    src: url('/assets/fonts/Akzidenz-grotesk-bold.ttf');
+}
+
+@font-face {
+    font-family: Bauhaus Medium;
+    src: url('/assets/fonts/Bauhaus-medium.ttf');
+}
+
+@font-face {
+    font-family: Futura Heavy;
+    src: url('/assets/fonts/futura-heavy-font.tff');
+}
+///////////////////////
+
+html { 
+     padding-bottom: 50px; 
+}
+
+body {
+    margin-right: auto;
+    margin-left:  auto;
+
+    width: 750px;
+    max-width: 100%;
+
+    // padding-right: 10%;
+    // padding-left: 10%;
+
+    font-family: Arial; //Times New Roman;
+    font-size: 18px;
+
+    /*
+    background-image: url("/assets/images/placeholder1.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    */
+}
+
+#construction {
+    text-align: center;
+}
+
+@media screen and (max-width: 749px) {
+    html {
+        padding-bottom: -500px;
+    }
+
+    img {
+         width: auto;
+         max-width: 100%;
+         height: auto;
+     } 
+    
+    p, h1, nav {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

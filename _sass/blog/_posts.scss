@@ -1,0 +1,31 @@
+/*
+* post.scss
+*/
+
+[class*="post"] {
+    text-align: left;
+}
+
+.post-header {
+    line-height: 0px;
+    height: 52px;
+}
+
+#post-title {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#post-date {
+    display: inline-block;
+}
+
+#post-links-prev {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px; 
+}
+
+#post-image-prev {
+    max-width: 10%;
+}

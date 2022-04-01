@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<article id="post"> <!-- isPost -->
+    <div class="post"> <!-- custom post class -->
+        <header>
+            <div class="post-header">
+                <!-- ADD CONDITIONAL %Y -->
+                <h1 id="post-title">{{ page.title }}</h1>{{ page.date | date: "%b %-d" | downcase }}
+            </div>
+                <!-- {{ page.subtitle }} --> <!-- not really necessary imo -->
+            <!--
+            <ul class="post-categories">
+                {% for category in page.categories %}
+                <li class="post-category">{{ category }}</li>
+                {% endfor %}
+            </ul>
+            -->
+        </header>
+        {{ content }}
+    </div>
+</article>
