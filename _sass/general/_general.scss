@@ -51,11 +51,7 @@ body {
     text-align: center;
 }
 
-@media screen and (max-width: 749px) {
-    html {
-        padding-bottom: -50px;
-    }
-
+@media (min-width: 320px) and (max-width: 750px){
     img {
          width: auto;
          max-width: 100%;
