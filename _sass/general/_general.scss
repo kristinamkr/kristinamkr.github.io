@@ -2,14 +2,8 @@
 * general.css
 */
 
-/*
-@viewport {
-    width: device-width;
-    zoom: 1.0;
-}
-*/
+// importing fonts... ----------------------------------------------------------
 
-// importing fonts...
 @font-face {
     font-family: Akzidenz Grotesk Bold;
     src: url('/assets/fonts/Akzidenz-grotesk-bold.ttf');
@@ -24,10 +18,16 @@
     font-family: Futura Heavy;
     src: url('/assets/fonts/futura-heavy-font.tff');
 }
-///////////////////////
+
+// -----------------------------------------------------------------------------
+
+* {
+    margin: 0;
+    padding: 0;
+}
 
 html { 
-     padding-bottom: 50px; 
+    padding-bottom: 50px; 
 }
 
 body {
@@ -36,9 +36,6 @@ body {
 
     width: 750px;
     max-width: 100%;
-
-    // padding-right: 10%;
-    // padding-left: 10%;
 
     font-family: Arial; //Times New Roman;
     font-size: 18px;
@@ -56,7 +53,7 @@ body {
 
 @media screen and (max-width: 749px) {
     html {
-        padding-bottom: -500px;
+        padding-bottom: -50px;
     }
 
     img {

@@ -1,0 +1,112 @@
+/*
+*  plantGen/main.css
+*/
+
+#plant-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-left: -20%;
+    width: 1050px;
+    height: 850px;
+    background-color: #d4fad9;
+    border: 10px solid #497a53; 
+}
+
+#settings-wrapper {
+    display: flex;
+    order: 1;
+    width: 300px;
+    height: 180px;
+    margin-top: 1.15%;
+    padding: 20px;
+    background-color: #b0b4b0;
+    border: 3px solid #727773;
+}
+
+#plantForm {
+    text-align: left;
+}
+
+#fractalType {
+    width: 200px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+#genSlider {
+    width: 300px;
+    max-width: 100%;
+}
+
+#scaleSlider {
+    width: 300px;
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+#submit {
+    display: inline;
+    margin-left: 45%;
+    text-align: left;
+}
+
+#download {
+    display: inline;
+    margin-left: 5%;
+    text-align: right;
+}
+
+#canvas-wrapper {
+    display: flex;
+    margin-top: 1%;
+    width: 650px;
+    max-width: 100%;
+    height: 825px;
+    max-height: 100%;
+}
+
+canvas {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+    border: 3px solid black;
+}
+
+@media (min-width: 320px) and (max-width: 750px){
+    #plant-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
+        width: 750px;
+        max-width: 100%;
+        height: 1050px;
+    }
+
+    #settings-wrapper {
+        order: 2;
+        margin: auto;
+        margin-top: -5%;
+        margin-bottom: 5%;
+        width: 300px;
+        height: 180px;
+    }
+
+    #canvas-wrapper {
+        order: 1;
+        margin: auto;
+    }
+
+    canvas {
+        width: 500px;
+        max-width: 90%;
+        height: 750px;
+        max-height: 90%;
+        margin-top: 5%;
+    }
+
+    #submit {
+        margin-left: 40%;
+    }
+}

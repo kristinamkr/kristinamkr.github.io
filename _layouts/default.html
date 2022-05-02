@@ -11,23 +11,16 @@
     <title>{{ page.title }} - {{ site.title }}</title>
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="/assets/mushroom_tiny.ico">
-
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        $(function(){
+            $("#header").load("/assets/layouts/header.html");
+        });
+    </script>
     <script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"kristinamkr",utcoffset:"-8"}))};sessionStorage.setItem("_swa","1");</script>
 </head>
 <body>
-    <div class="header"> <!-- my custom header class -->
-        <p><div id="site-header"><a href="/">mkrtchyan.xyz</a></div></p>
-        <nav>
-        <ul class="nav-links" id="links-header">
-            <li><a href="/about" {% if page.title=="about" %}class="active-page"{% endif %}>about</a></li>
-            <li><a href="/archive" {% if page.title=="archive" %}class="active-page"{% endif %}>archive</a></li>
-            <li><a href="https://github.com/kristinamkr"><img src="/assets/images/github_120px.png" class="image-icon"></a></li>
-            <li><a href="https://www.linkedin.com/in/kristinamkr?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BsiLpStYtQye3Vz7LhCH7yw%3D%3D"><img src="/assets/images/linkedin.png" class="image-icon"></a></li>
-        </ul>
-        </nav>
-        <!-- HERE --> 
-        <hr class="hr1">
-    </div>
+    <div id="header"></div>
     <main class="page-content">
         {{ content }}
     </main>
