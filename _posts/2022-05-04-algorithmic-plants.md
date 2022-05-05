@@ -9,7 +9,7 @@ preview:    Exploring a career in eBotany.
 ---
 
 ![image-holder]({{ page.cover }}){:.image-post-cover}
-After avoiding it for so long, I'm finally uploading what I have. Behold, a [plant generator](/plant-generator)!
+Behold, a [plant generator](/plant-generator)!
 <br /><br />
 First, none of this would be possible without Prusinkiewicz and Lindenmayer’s Algorithmic Beauty of Plants [(pdf)](https://archive.org/details/the-algorithmic-beauty-of-plants/page/152/mode/2up). I was introduced to this book years ago and even made a [poster](/assets/AlgoPlants_Presentation.pdf) about it for a class assignment, but actually writing the code seemed too daunting at the time. Now I’ve done it! …sorta. 
 <br /><br />
