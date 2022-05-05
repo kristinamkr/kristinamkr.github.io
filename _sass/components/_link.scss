@@ -2,15 +2,16 @@
 * link.scss
 */
 
-a { 
+.header a { 
     // outline: none;
     text-decoration: none;
     transition: 0.5s;
 }
 
-a:link, a:visited, a:focus { 
+.header a:link, .header a:visited, .header a:focus { 
     color: #000000;
 }
+
 
 nav ul {
     padding: 0;
@@ -26,13 +27,15 @@ nav.link-preview a {
     font-size: 32px;
     padding-top: 10px;
     padding-bottom: 10px;
+    text-decoration: none;
 
 } 
 
+nav.link-preview a:link, nav.link-preview a:visited, nav.link-preview a:focus { 
+    color: #000000;
+}
+
 nav a {
-    // text-align: center;
-    // outline: none;
-    // width: 15.5%;
     margin-right: 5.5%;
     line-height: 1;
 } 
